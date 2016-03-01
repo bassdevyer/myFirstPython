@@ -1,13 +1,11 @@
-def saludo():
+def saludo(usuario):
     # Cuando no se desea definir por ahora, se utiliza pass
     # pass
-    print("Hola")
+    print("Hola", usuario)
 
 def comer():
     print("Comer")
 
-saludo()
-saludo()
-saludo()
-saludo()
-saludo()
+nombre = "Luis"
+
+saludo(nombre)
