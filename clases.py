@@ -3,13 +3,20 @@ class Persona:
     nPiernas = 0
     cabello = True
     cCabello = "Defecto"
-    #Las clases no se pueden quedar vacias, cuando las estas definiendo debes implementar el codigo
-    #Para saltar la implementacion utiliza pass
-    #pass
+    hambre = 0
+
+    def dormir(self):
+        pass
+    # self es como this in java
+    def comer(self):
+        self.hambre = 0
 
 class Hombre:
     nombre = "Defecto"
     sexo = "M"
+
+    def cambiarNombre(self, nombre):
+        self.nombre = nombre;
 
 class Mujer:
     nombre = "Defecto"
