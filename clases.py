@@ -3,26 +3,31 @@ class Persona:
     nPiernas = 0
     cabello = True
     cCabello = "Defecto"
-    hambre = 0
+    hambre = 10
 
-    #Constructor o inicializador
     def __init__(self):
         self.nBrazos = 2
         self.nPiernas = 2
 
     def dormir(self):
         pass
-    # self es como this in java
+
     def comer(self):
         self.hambre = 0
 
-class Hombre:
+class Hombre(Persona):
     nombre = "Defecto"
     sexo = "M"
 
     def cambiarNombre(self, nombre):
         self.nombre = nombre;
 
-class Mujer:
+class Mujer(Persona):
     nombre = "Defecto"
     sexo = "F"
+
+
+jose = Hombre()
+print(jose.hambre)
+jose.comer()
+print(jose.hambre)
