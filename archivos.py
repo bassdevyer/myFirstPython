@@ -9,6 +9,14 @@ def escribirArchivo():
     archivo.write("9203929393")
     archivo.close()
 
+def leerArchivo():
+    archivo = open("datos.txt", "r")
+    linea = archivo.readline()
+    while linea != "":
+        print(linea)
+        linea = archivo.readline()
+    archivo.close()
 
 #crearArchivo()
-escribirArchivo()
+#escribirArchivo()
+leerArchivo()
