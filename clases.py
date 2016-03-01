@@ -5,6 +5,11 @@ class Persona:
     cCabello = "Defecto"
     hambre = 0
 
+    #Constructor o inicializador
+    def __init__(self):
+        self.nBrazos = 2
+        self.nPiernas = 2
+
     def dormir(self):
         pass
     # self es como this in java
